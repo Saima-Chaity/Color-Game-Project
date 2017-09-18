@@ -10,13 +10,13 @@ var reset= document.getElementById("reset");
 var modebtn=document.querySelectorAll(".modebtn")
 
 init();
-
 function init(){
     modebtnSetup();
     squaresSetup();
     resetbtn();    
 }
 
+//Easy and hard button setup
 function modebtnSetup(){
     for(var i=0; i<modebtn.length; i++)
     {
@@ -31,6 +31,7 @@ function modebtnSetup(){
 
 }
 
+//Generating Squares
 function squaresSetup(){
     for(var i=0; i<squares.length; i++){
         squares[i].addEventListener("click", function(){
@@ -50,6 +51,7 @@ function squaresSetup(){
 
 }
 
+//Reset button to start new game
 function resetbtn (){
     colors= generateRandomColors(numOfSquares);
     pickedColor=pickColor();   
@@ -63,26 +65,28 @@ function resetbtn (){
             squares[i].style.backgroundColor=colors[i];
         }else{
             squares[i].style.display="none";
-
         }
     }
     h2.style.backgroundColor="steelblue"; 
 }
-
 reset.addEventListener("click", function(){
     resetbtn();
 })
 
-
+//Change color of squares
 function changeColor(color){
     for(var i=0; i<squares.length; i++){
        squares[i].style.backgroundColor=color;
     }
 }
+
+//Pick random color
 function pickColor(){
     var random= Math.floor(Math.random() * colors.length);
     return colors[random];
 }
+
+//Generate random colors
 function generateRandomColors(num){
     var arr=[];
     for(var i=0; i<num; i++){
