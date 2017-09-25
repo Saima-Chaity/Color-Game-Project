@@ -1,2 +1,4 @@
 # Color-Game-Project
-This is my first project on git. I worked on this project during my course using html, css, bootstrap and javaScript. 
+
+This is a JavaScript based game application. I worked on this project during my certification on Web Developer Bootcamp. It is an excellent game application using HTML, CSS, Bootstrap and JavaScript. 
+
