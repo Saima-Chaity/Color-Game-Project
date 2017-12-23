@@ -21,7 +21,7 @@ This is a JavaScript based game application that generates new colors everytime 
 **When picked color and clicked color match -**
 <img width="1277" alt="screen shot 2017-09-18 at 3 25 41 pm" src="https://user-images.githubusercontent.com/31779751/30832582-6ec03182-a200-11e7-84d4-b886e70a7b2e.png">
 
-
+**Demo:** https://pure-fortress-51416.herokuapp.com
 
 
 
